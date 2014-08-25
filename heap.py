@@ -1,3 +1,9 @@
+"""Heap class.
+
+I wrote this to brush up on CS fundamentals. It's not extremely well
+tested nor is it meant for production use.
+
+"""
 import enum
 import math
 import operator
@@ -13,6 +19,9 @@ class Heap:
 
     - https://en.wikipedia.org/wiki/Heap_(data_structure)
     - https://en.wikipedia.org/wiki/Binary_heap
+
+    Heaps are min-heaps by default. Pass ``heap_type=HeapType.MAX`` for
+    a max-heap. Alternatively, pass a custom comparator.
 
     """
 
